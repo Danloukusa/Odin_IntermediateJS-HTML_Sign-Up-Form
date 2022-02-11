@@ -1,0 +1,53 @@
+html,body{
+    height:100%;
+    margin: 0;
+}
+
+/* CONTAINERS */
+
+.mainBody{
+    border: 1px solid black;   
+}
+
+#grid-Container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap:1px;
+    height:100%;
+}
+
+
+
+/* CHILD */
+
+#pic{
+    grid-column: 1/2;
+    grid-row: 1/5;
+    
+    background-image: url(public-domain-sunset-tree.jpg);
+    
+    display:grid;
+    grid-template-rows:repeat(4, 1fr);
+}
+   #logo{
+        background-color:rgb(15, 48, 139, .6);
+        color:white;
+    }
+
+
+
+#head{
+    grid-column:2/4;
+    grid-row:1/2;
+}
+
+#form{
+    grid-column:2/4;
+    grid-row:2/4;
+}
+
+#foot{
+    grid-column: 2/4;
+    grid-row: 4/5;
+}
